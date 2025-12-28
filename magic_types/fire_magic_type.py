@@ -1,0 +1,2 @@
+class FireMagic:
+    pass
