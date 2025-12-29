@@ -6,5 +6,6 @@ class HarmfulSpell(ABC):
         self.damage_type = None
         self.damage: int = 0
         self.duration: int = 0
-        self.magic_school: MagicType
+        self.magic_school: MagicType = None
+        self.mana_cost: int = 0
         

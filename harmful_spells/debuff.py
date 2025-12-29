@@ -3,4 +3,4 @@ from harmful_spells.harmful_spell import HarmfulSpell
 
 class Debuff(ABC, HarmfulSpell):
     def __init__(self):
-        self.debuff_duration: int = 0
+        super().__init__()

@@ -1,4 +1,4 @@
-from hero_class import Hero
+from units.hero_class import Hero
 import asyncio
 
 class Mage(Hero):
