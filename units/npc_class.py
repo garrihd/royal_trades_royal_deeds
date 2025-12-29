@@ -4,6 +4,8 @@ from units.hero_class import Hero
 
 class NPC(ABC):
     def __init__(self):
+        self.health: int = 0
+        self.mana: int = 0
         self.strength: int = 5
         self.intellect: int = 5
         self.spirit: int = 5
@@ -12,7 +14,7 @@ class NPC(ABC):
         self.haste: int = 5
         self.debuff_slots: list[Debuff] = []
         self.buff_slots: list = []
-        self.forst_resistance: int = 0
+        self.frost_resistance: int = 0
         self.fire_resistance: int = 0
         self.shadow_resistance: int = 0
         self.arcane_resistance: int = 0

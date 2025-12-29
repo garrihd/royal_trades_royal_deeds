@@ -1,6 +1,9 @@
-from abc import ABC
-from magic_types import MagicType
 
+from .magic_type import MagicType
 
-class FrostMagic(ABC, MagicType):
-    pass
+class FrostMagic(MagicType):
+    def __init__(self):
+        self.damage_type = self.__class__
+
+    def __repr__(self):
+        return self.__class__.__name__
