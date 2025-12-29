@@ -17,7 +17,7 @@ class FireBolt(BoltSpell, Debuff):
         self.y_loc = 0
 
 
-    async def cast_fireball(self, target: Hero | NPC):
+    async def cast_firebolt(self, target: Hero | NPC):
         pass
 
 
