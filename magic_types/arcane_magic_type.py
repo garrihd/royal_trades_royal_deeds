@@ -3,6 +3,7 @@ from .magic_type import MagicType
 
 class ArcaneMagic(MagicType):
     def __init__(self):
+        super().__init__()
         self.damage_type = self.__class__
 
     def __repr__(self):

@@ -2,4 +2,5 @@ from abc import ABC
 
 
 class MagicType(ABC):
-    pass
+    def __init__(self):
+        self.dispellable: bool = True

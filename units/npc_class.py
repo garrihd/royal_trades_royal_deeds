@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 from harmful_spells.debuff import Debuff
 from units.hero_class import Hero
 
@@ -24,8 +24,10 @@ class NPC(ABC):
         self.level: int = 1
         self.experience: int = 0
 
+    @abstractmethod
     def target_self(self):
         pass
 
+    @abstractmethod
     def target(self, target: Hero | NPC):
         pass

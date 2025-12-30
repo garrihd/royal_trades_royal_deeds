@@ -3,7 +3,7 @@ from .magic_type import MagicType
 
 class FrostMagic(MagicType):
     def __init__(self):
+        super().__init__()
         self.damage_type = self.__class__
-
     def __repr__(self):
         return self.__class__.__name__

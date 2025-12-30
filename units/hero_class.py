@@ -1,6 +1,10 @@
 from abc import ABC
 from harmful_spells.debuff import Debuff
-from units.npc_class import NPC
+from typing import TYPE_CHECKING
+import numpy as np
+if TYPE_CHECKING:
+    from units import Hero, NPC
+
 
 class Hero(ABC):
     def __init__(self):
@@ -26,3 +30,8 @@ class Hero(ABC):
 
     def target(self, target: Hero | NPC):
         pass
+
+    def get_distance(self, target: Hero | NPC) -> float:
+        p1 = np.array([self.x_location, self.y_location])
+        p2 = np.array([target.x_location, target.y_location])
+        return float(np.linalg.norm(p2 - p1))
